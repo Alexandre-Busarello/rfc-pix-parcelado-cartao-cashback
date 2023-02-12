@@ -68,9 +68,8 @@ Foi representado 3 atores: Parceiro, Cliente e Aplicação.
 - Parceiro é um lojista cadastrado;
 - Cliente é um cliente cadastrado que utilizara algum lojista parceiro;
 - Aplicação é o ecossistema como um todo que ira fazer os processametos em background, esses fluxos de aplicação são startados pelos casos de uso do cliente;
-  - O caso de uso "Gerar cashback" extende tanto a confirmação do pagamento no cartão quanto do Pix, pois ele pode acontecer em qualquer um dos dois fluxos (mas nunca nos dois), o que acontecer por ultimo gera o cashback;
-  - O mesmo pode ocorrer com os casos de usos "Estornar pagamento do Pix" e "Estornar pagamento no cartão de cŕedito", são fluxo que podem acontecer quando ocorre a recusa de um dos meios de pagamento (por isso estã com extends);
-- O diagrama ficou um pouco complexo, mas representa todos os fluxos que poderiam ocorrer dentro da solução proposta para esta RFC. Ele mostra tudo que pode acontecer, mas não de maneira ordenada já que o diagrama de casos de uso não tem como objetivo definir a ordem das coisas, mas sim tudo que pode acontecer pelas ações dos atores.
+
+É importante ressaltar que o `<<includes>>` trata-se de algo que vai acontecer obrigatoriamente a partir de um outro fluxo. Já o `<<extends>>` é algo que pode acontecer a partir de outro fluxo, mas não obrigatoriamente. Vai depender da situação.
 
 <img src="/imagens/casos%20de%20uso/casos%20de%20uso.png"/>
 

@@ -12,7 +12,6 @@ actor Aplicacao
 (Gerar o cashback) as (UC5)
 (Recusar o pagamento do cartão de crédito) as (UC6)
 (Recusar o pagamento do Pix) as (UC7)
-(Estornar o pagamento do cartão de crédito) as (UC8)
 (Estornar o pagamento do Pix) as (UC9)
 
 Parceiro --> UC1
@@ -24,11 +23,9 @@ Cliente --> UC31
 
 Aplicacao --> UC4
 Aplicacao -> UC41
-UC5 -> UC4: <<extends>>
-UC5 --> UC41: <<extends>>
+UC5 <-- UC41: <<includes>>
 Aplicacao --> UC6
 Aplicacao --> UC7
-UC9 -> UC6: <<extends>>
-UC8 --> UC7: <<extends>>
+UC9 --> UC6: <<extends>>
 
 @enduml
