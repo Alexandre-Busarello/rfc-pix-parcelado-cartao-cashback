@@ -1,0 +1,41 @@
+@startuml Api Management in front of AKS
+
+title Arquitetura de Alto Nivel
+
+actor "Parceiro" as parceiro
+actor "Cliente" as cliente
+
+frame Ecossistema{
+    frame Interfaces {
+        node "Admin do Parceiro" as adminParceiro
+        node "Frontend do Pix Parcelado" as frontendPixParcelado
+    }
+    frame k8s {
+        node "OpenPix API" as openPixApi
+        node "Pagamento Pix Parcelado API" as pixParceladoApi
+        node "BFF do Pix Parcelado API" as bffPixParceladoApi
+        node "Cashback API" as cashbackApi
+    }
+    frame "Cloud RabbitMQ" {
+        node "Barramento" as barramento
+        frame "RabbitMQ Queue" as queue {
+          node "open-pix-service-queue" as openPixServiceQueue
+          node "installment-pix-service-queue" as installmentPixServiceQueue
+          node "cashback-service-queue" as cashbackServiceQueue
+        }
+    }
+}
+
+parceiro -->> adminParceiro
+adminParceiro -->> openPixApi
+openPixApi -->> pixParceladoApi
+pixParceladoApi -->> barramento
+barramento -->> queue
+
+cliente -->> frontendPixParcelado
+frontendPixParcelado -->> bffPixParceladoApi
+bffPixParceladoApi -->> pixParceladoApi
+bffPixParceladoApi -->> barramento
+cashbackApi -->> barramento
+
+@enduml
