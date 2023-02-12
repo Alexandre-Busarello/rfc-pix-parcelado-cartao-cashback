@@ -127,7 +127,7 @@ Nesta etapa, temos a maior parte dos processamentos assíncronos, pois é a pont
 
 Se houver falha na etapa de pagamento com o cartão (independentemente do motivo), é importante garantir que o cliente possa fazer o estorno de pagamento por Pix. O Excalidraw ilustra boa parte dos processamentos assíncronos iniciados nesta etapa, mas ainda é importante revisar, pois pode haver algo que não foi previsto.
 
-A utilização do barramento para mensagem (e eventos) além de tornar o processamento mais rápido, também traz uma vantagem adicional: a visibilidade fornecida pelo RabbitMQ sobre tudo que pode ter falhado, e a opção de reprocessamento de mensagens em caso de erro, garantindo a confiabilidade da aplicação.
+A utilização do barramento para mensagem (e eventos) além de tornar o processamento mais rápido, também traz uma vantagem adicional: a visibilidade fornecida pelo RabbitMQ sobre tudo do que pode ter falhado, e a opção de reprocessamento de mensagens em caso de erro, garantindo a confiabilidade da aplicação.
 
 ## 4. Fases de Execução
 
