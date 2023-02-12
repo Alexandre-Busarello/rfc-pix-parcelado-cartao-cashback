@@ -73,7 +73,7 @@ Foi representado 3 atores: Parceiro, Cliente e Aplicação.
 
 <img src="/imagens/casos%20de%20uso/casos%20de%20uso2.png"/>
 
-Para não deixar o diagrama de caso de uso acima ainda mais complexo, foi omitido o caso de uso "Efetuar pagamento por Pix para o Parceiro" que ocorrerá de forma automatica pela aplicação. Esse fluxo pode acontecer tanto na confirmação do pagamento do Pix quanto na confirmação do pagamento do cartão de crédito, vai depender de quem será executado por ultimo. A única condição é que ambos precisam estar confirmados.
+Para não deixar o diagrama de caso de uso acima ainda mais complexo, foi omitido o caso de uso "Efetuar pagamento por Pix para o Parceiro" que ocorrerá de forma automatica pela aplicação. Esse fluxoira acontecer quando o pagamento por cartão das parcelas for confirmado.
 
 ## 3. Mudanças na Arquitetura e Fluxos do Processo
 
