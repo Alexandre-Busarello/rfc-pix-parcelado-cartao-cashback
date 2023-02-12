@@ -123,7 +123,7 @@ Aqui temos a primeira interação com o Barramento (nosso serviço de mensageria
 
 <img src="/imagens/fluxos/Fluxo5.png"/>
 
-Nesta etapa, temos a maior parte dos processamentos assíncronos, pois é a ponta final do pagamento. É importante manter os serviços sincronizados através do barramento, para evitar prender o cliente na interface durante todo esse processo. Aqui, precisamos aguardar o processamento do cartão por um serviço externo (Adyen) e, em caso de sucesso, conceder o cashback e notificar o usuário via socket.
+Nesta etapa, temos a maior parte dos processamentos assíncronos, pois é a ponta final do pagamento. É importante manter os serviços sincronizados através do barramento, para evitar prender o cliente na interface durante todo esse processo. Aqui, precisamos aguardar o processamento do cartão por um serviço externo (Adyen conforme sugestão) e, em caso de sucesso, conceder o cashback e notificar o usuário via socket.
 
 Se houver falha na etapa de pagamento com o cartão (independentemente do motivo), é importante garantir que o cliente possa fazer o estorno de pagamento por Pix. O Excalidraw ilustra boa parte dos processamentos assíncronos iniciados nesta etapa, mas ainda é importante revisar, pois pode haver algo que não foi previsto.
 
