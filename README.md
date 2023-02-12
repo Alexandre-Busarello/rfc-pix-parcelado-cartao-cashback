@@ -24,7 +24,7 @@
 		- [5.4. Vantagens da Separação em Vários Serviços](#54-vantagens-da-separação-em-vários-serviços)
 		- [5.5. Porque usar um BFF para o Frontend?](#55-porque-usar-um-bff-para-o-frontend)
 	- [6. Dependências de Biblioteca](#6-dependências-de-biblioteca)
-	- [7. Preocupações com segurança](#7-preocupações-com-segurança)
+	- [7. Preocupações com Segurança](#7-preocupações-com-segurança)
 	- [8. Testes e Implantação](#8-testes-e-implantação)
 	- [9. Acessibilidade](#9-acessibilidade)
 	- [10. Referências](#10-referências)
@@ -209,7 +209,7 @@ Ao planejar as dependências de biblioteca para a implementação da solução, 
 
 Observamos ainda que pode ser útil considerar a utilização do `Apollo` caso seja necessário adotar o GraphQL em algum dos serviços.
 
-## 7. Preocupações com segurança
+## 7. Preocupações com Segurança
 
 A segurança das informações financeiras dos usuários é uma questão crítica. É importante destacar que o setor financeiro é um alvo frequente de ataques cibernéticos, por isso é importante implementar medidas de segurança efetivas para proteger as informações sensíveis dos usuários.
 
