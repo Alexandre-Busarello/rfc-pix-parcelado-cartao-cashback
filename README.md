@@ -91,7 +91,7 @@ Abaixo, encontra-se uma imagem da arquitetura proposta, baseada em um diagrama E
 
 <img src="/imagens/arquitetura/ArquiteturaExcalidraw.png"/>
 
-Neste diagrama, foi considerada uma nova arquitetura de serviços e frontend para atender exclusivamente o pagamento parcelado com Pix. A parte esquerda representa a integração com o ecossistema existente da Woovi, embora possa haver mais componentes nesta área que não foram incluídos devido à minha falta de conhecimento sobre o assunto.
+Neste diagrama, foi considerada uma nova arquitetura de serviços e frontend para atender exclusivamente o pagamento parcelado com Pix. A parte esquerda representa a integração com o ecossistema existente da Woovi, embora possa haver mais componentes nesta área que não foram incluídos devido à minha falta de conhecimento sobre o ecossistema atual da Woovi.
 
 ### 3.1. Fluxo de Pagamento por Pix Parcelado Iniciado pelo Parceiro
 
