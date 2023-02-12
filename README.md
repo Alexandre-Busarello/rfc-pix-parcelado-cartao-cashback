@@ -44,7 +44,7 @@ Nesta solução, será realizada uma intermediação do pagamento parcelado pelo
 
 ## 1. UI & UX
 
-Nossa equipe de UX/UI trabalhará para desenvolver uma interface amigável e intuitiva para que os lojistas possam oferecer o pagamento parcelado com PIX aos seus clientes. Para isso, será utilizado um wireframe de baixa fidelidade (mobile first) como referência para o desenvolvimento da interface, que pode ser encontrado neste [link](https://www.figma.com/file/Jq4LodTC09wtVFhaF1pmGt/Untitled?node-id=0%3A1&t=g8s3HajlfI8J5NQB-1).
+Nossa equipe de UX/UI trabalhará para desenvolver uma interface amigável e intuitiva para que os lojistas possam oferecer o pagamento parcelado com PIX aos seus clientes. Para isso, foi criado um wireframe de baixa fidelidade (mobile first) como referência para o desenvolvimento da interface, que pode ser encontrado neste [link](https://www.figma.com/file/Jq4LodTC09wtVFhaF1pmGt/Untitled?node-id=0%3A1&t=g8s3HajlfI8J5NQB-1).
 
 O wireframe apresenta um exemplo do fluxo para a opção de parcelamento em 2x, com uma entrada no PIX e uma parcela no cartão de crédito.
 
